@@ -2,6 +2,48 @@
 
 <body style="background-color: black;">
     <div id="container"></div>
+    <div>
+        <textarea cols="100" rows="25" name="data" id="data-field">
+#SEED: 0.3147882097400725
+SAT0,88.25420923556314,-91.12445200386951,512.8928357684379
+SAT1,46.32696013100926,41.313662665401296,493.7745096296941
+SAT2,-21.168509558639954,-131.55369539343192,590.554475722915
+SAT3,-16.254426940502086,-60.79731799873623,584.8566679902619
+SAT4,-49.53318688683556,-165.5696363569662,437.60906274018316
+SAT5,-89.40294913073053,-173.0085641221777,511.6277575823348
+SAT6,-18.24023678230175,123.03610237313984,693.6838690522438
+SAT7,70.76534395133172,151.46335493496218,570.4324794566915
+SAT8,23.00927486104338,-31.893248871706135,654.6689080054816
+SAT9,-45.685399279800855,-69.50352289126226,445.11158584486185
+SAT10,-31.070673134719023,112.6035954790928,361.0338612124464
+SAT11,-66.0808319907444,-28.172402026776098,443.7972993861471
+SAT12,-4.494471635702382,-165.31939928852483,672.1486831738448
+SAT13,69.66013914220233,-83.74566009630779,498.90510351224054
+SAT14,-47.86339461717837,60.06709248647351,541.7644226369125
+SAT15,-67.28146989872235,-147.61903960612,438.5788213671183
+SAT16,-1.8922298892163951,19.66222572045052,610.6829008845602
+SAT17,-42.59673879090749,12.637913116134825,424.13190237307555
+SAT18,-59.01687988779537,-9.86850811694677,657.6639713326522
+SAT19,-12.824436881063718,91.73183687859523,625.8813334203226
+ROUTE,23.296345006960536,-8.559098924456066,-29.883823225709875,100.19617345620532
+</textarea>
+    </div>
+    <div>
+        <button id="route">FIND ROUTE</button>
+    </div>
+    <div id="seed" style="color: white;"></div>
+    <div id="results" style="color: white;"></div>
 </body>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r63/three.min.js"></script>
+<script id="vertexShader" type="x-shader/x-vertex">
+    uniform vec3 viewVector; uniform float c; uniform float p; varying float intensity; void main({ vec3 vNormal = normalize( normalMatrix * normal ); vec3 vNormel = normalize( normalMatrix * viewVector ); intensity = pow( c - dot(vNormal, vNormel), p );
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 ); }
+</script>
+<script id="fragmentShader" type="x-shader/x-fragment">
+    uniform vec3 glowColor; varying float intensity; void main() { vec3 glow = glowColor * intensity; gl_FragColor = vec4( glow, 1.0 ); }
+</script>
+<script src="/js/globe.js"></script>
+ -->
+<script src="/js/route.js"></script>
 
 </html>
