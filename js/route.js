@@ -12,7 +12,6 @@ function Point(name, type, lat, lon, r) {
     this.visiblePoints = [];
 }
 
-
 var SatelliteRouter = function() {
     var router = this;
     var points = [];
@@ -96,6 +95,7 @@ var SatelliteRouter = function() {
             });
         });
     }
+    
     this.calculateShortestRoute = function() {
         // Dijkstra algorithm
         var route = [];
